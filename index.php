@@ -27,6 +27,7 @@
             <ul>
                 <li>
                     <button>Work</button>
+                    <img src="" alt="">
                 </li>
                 <li>
                     <button>Skill</button>
@@ -99,13 +100,70 @@
 
                 <ul>
                     <li>
-                        <ul>
-                            <li>
-                                <img src="#" alt="">
+                        <img src="" alt="">
+                    </li>
 
-                                <p></p>
-                            </li>
+                    <li>
+                        <img src="" alt="">
+                    </li>
+
+                    <li>
+                        <img src="" alt="">
+                    </li>
+                </ul>
+            </section>
+
+
+            <section>
+
+                <h2>About</h2>
+
+                <ul>
+
+                    <li>
+
+                        <img src="#" alt="">
+
+                        <img src="#" alt="">
+
+                    </li>
+
+                    <li>
+
+                        <p></p>
+
+                    </li>
+
+                </ul>
+            </section>
+
+
+            <section>
+
+                <h2>Contact</h2>
+
+                <ul>
+
+                    <li>
+                        <ul>
+                            <li></li>
+
+                            <li></li>
                         </ul>
+                    </li>
+
+                    <li>
+                        <ul>
+                            <li></li>
+
+                            <li></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <button>
+                            メールでのお問い合わせ
+                        </button>
                     </li>
                 </ul>
             </section>
@@ -115,7 +173,7 @@
 
         <footer class="l-footer p-footer">
 
-            <p class="p-footer__copyright c-copyright">Copyright: RaiseTech</p>
+            <p class="p-footer__copyright c-copyright">Copyright: mamarie.moe</p>
         </footer>
 
     </div>
