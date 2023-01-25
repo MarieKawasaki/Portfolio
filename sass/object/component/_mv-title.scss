@@ -1,0 +1,9 @@
+@use "../../foundation/color" as c;
+
+.c-mv-title {
+    color: c.$main-visual-color;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+}

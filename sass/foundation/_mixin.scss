@@ -1,0 +1,39 @@
+// ブレークポイント
+
+$xs: 321px;           // sp用(iPhone5,iPhoneSE)
+$sm: 576px;           // sp用
+$md: 768px;           // sp用
+$lg: 1024px;          // pc/タブレット用
+$xl: 1280px;          // pc用
+// $xxl: 1920px;      // デスクトップ用
+
+
+@mixin xs {
+    @media screen and (min-width: ($xs)) {
+      @content;
+    }
+}
+
+@mixin sm {
+    @media screen and (min-width: ($sm)) {
+      @content;
+    }
+}
+
+@mixin md {
+    @media screen and (min-width: ($md)) {
+      @content;
+    }
+}
+
+@mixin lg {
+    @media screen and (min-width: ($lg)) {
+      @content;
+    }
+}
+
+@mixin xl {
+    @media screen and (min-width: ($xl)) {
+      @content;
+    }
+}

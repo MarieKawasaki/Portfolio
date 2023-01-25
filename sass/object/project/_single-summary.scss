@@ -1,0 +1,119 @@
+@use "../../foundation/mixin" as m;
+@use "../../foundation/color" as c;
+@use "../../foundation/font" as f;
+
+.p-single {
+    width: 89%;
+    margin: 0 auto;
+}
+
+.p-single-summary {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: c.$s-color;
+    font-family: f.$m-plus;
+
+    @include m.lg {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+    &__detail-title {
+        font-size: 28px;
+        line-height: 1.5;
+        margin-bottom: 30px;
+
+        @include m.lg {
+            font-size: 36px;
+            line-height: 1.5;
+            margin-bottom: 60px;
+        }
+    }
+
+    &__detail-text {
+        font-size: 16px;
+        line-height: 1.43;
+        margin-bottom: 34px;
+
+        @include m.lg {
+            margin-bottom: 60px;
+        }
+    }
+
+    &__detail-h3 {
+        font-size: 24px;
+        line-height: 1.5;
+        margin-bottom: 31px;
+
+        @include m.lg {
+            font-size: 28px;
+            line-height: 1.5;
+            margin-bottom: 60px;
+        }
+    }
+
+    &__detail-h4 {
+        font-size: 20px;
+        line-height: 1.45;
+        margin-bottom: 37px;
+
+        @include m.lg {
+            margin-bottom: 76px;
+        }
+    }
+
+    &__detail-h5 {
+        font-size: 20px;
+        line-height: 1.45;
+        margin-bottom: 30px;
+
+        @include m.lg {
+            margin-bottom: 60px;
+        }
+    }
+
+    &__detail-h6 {
+        font-size: 20px;
+        line-height: 1.45;
+        margin-bottom: 30px;
+
+        @include m.lg {
+            margin-bottom: 60px;
+        }
+    }
+
+    &__info {
+        padding: 30px 16px 30px 20px;
+        background-color: c.$s-html-bg;
+
+        @include m.lg {
+            padding: 50px 56px 60px 50px;
+        }
+    }
+
+    &__info-text {
+        font-size: 16px;
+        line-height: 1.43;
+        margin-bottom: 30px;
+
+        @include m.lg {
+            margin-bottom: 60px;
+        }
+    }
+
+    &__info-flex {
+        display: flex;
+    }
+
+    &__info-note {
+        font-size: 16px;
+        line-height: 1.43;
+    }
+
+    &__info-source {
+        font-size: 16px;
+        line-height: 1.43;
+        color: #4A6C9B;
+        border-bottom: 1px solid #4A6C9B;
+    }
+}

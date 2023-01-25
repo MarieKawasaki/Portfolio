@@ -1,0 +1,38 @@
+@use "../foundation/mixin" as m;
+@use "../foundation/color" as c;
+
+.l-aside {
+    width: 20%;
+    background-color: c.$aside-bg;
+
+    @media screen and (max-width: m.$xl) {
+        position: absolute;
+        top: 0;
+        right: -44%;
+        width: 44%;
+        transition: all 0.5s;
+    }
+
+    @media screen and (max-width: m.$lg) {
+        position: absolute;
+        top: 0;
+        right: -87%;
+        width: 87%;
+        transition: all 0.5s;
+    }
+}
+
+.l-aside.open {
+    position: absolute;
+    z-index: 20;
+
+    @media screen and (max-width: m.$xl) {
+        right: 0;
+        transition: all 0.5s;
+    }
+
+    @media screen and (max-width: m.$lg) {
+        right: 0;
+        transition: all 0.5s;
+    }
+}

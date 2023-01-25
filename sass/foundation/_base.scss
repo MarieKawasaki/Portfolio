@@ -1,0 +1,18 @@
+html,
+body {
+    font-size: 100%;
+    overflow-x: hidden;
+
+}
+
+body {
+    margin: 0;
+    padding-inline-start: 0;
+    display: flex;
+    flex-flow: column;
+}
+
+img {
+    max-width: 100%;
+    width: 100%;
+}

@@ -1,0 +1,54 @@
+@use "../../foundation/color" as c;
+
+// 二重の矢印
+
+.c-pagination {
+    &--left {
+        content: "";
+        width: 10px;
+        height: 10px;
+        border-top: solid 1px c.$a-pagination-color;
+        border-left: solid 1px c.$a-pagination-color;
+        transform: rotate(-45deg);
+        position: relative;
+        display: inline-block;
+
+        &::after {
+            content: "";
+            width: 10px;
+            height: 10px;
+            border-top: solid 1px c.$a-pagination-color;
+            border-left: solid 1px c.$a-pagination-color;
+            position: absolute;
+            top: 5px;
+            left: 5px;
+        }
+    }
+
+    &--right {
+        content: "";
+        width: 10px;
+        height: 10px;
+        border-top: solid 1px c.$a-pagination-color;
+        border-right: solid 1px c.$a-pagination-color;
+        transform: rotate(45deg);
+        position: relative;
+        display: inline-block;
+
+        &::after {
+            content: "";
+            width: 10px;
+            height: 10px;
+            border-top: solid 1px c.$a-pagination-color;
+            border-right: solid 1px c.$a-pagination-color;
+            position: absolute;
+            top: 5px;
+            right: 5px;
+        }
+    }
+}
+
+
+.search-margin {
+    margin: 30px 0 30px 20px;
+}

@@ -1,0 +1,10 @@
+@use "../../foundation/color" as c;
+@use "../../foundation/font" as f;
+
+.menu-item-type-taxonomy>a {
+    font-family: f.$m-plus;
+    font-size: 18px;
+    line-height: 1.5;
+    color: c.$aside-color;
+    font-weight: bold;
+}

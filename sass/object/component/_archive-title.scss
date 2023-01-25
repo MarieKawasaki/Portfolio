@@ -1,0 +1,10 @@
+@use "../../foundation/color" as c;
+@use "../../foundation/font" as f;
+
+
+.c-archive-title {
+    color: c.$a-article-color;
+    font-family: f.$m-plus;
+    font-size: 20px;
+    line-height: 1.45;
+}

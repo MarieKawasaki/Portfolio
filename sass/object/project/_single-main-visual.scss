@@ -1,0 +1,36 @@
+@use "../../foundation/mixin" as m;
+@use "../../foundation/color" as c;
+@use "../../foundation/font" as f;
+
+
+.p-single-main-visual {
+    width: 100%;
+    height: 225px;
+    position: relative;
+
+    @include m.lg {
+        height: 500px;
+    }
+
+
+    .wp-post-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__title {
+        margin-left: 7%;
+        font-family: f.$m-plus;
+        font-size: 36px;
+        line-height: 1.5;
+        font-weight: bold;
+        text-shadow: 1px 1px 1px #fcba03;
+
+
+        @include m.lg {
+            font-size: 60px;
+            line-height: 1.46;
+        }
+    }
+}

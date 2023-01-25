@@ -1,0 +1,14 @@
+@use "../foundation/mixin" as m;
+
+.l-container {
+    width: 100%;
+
+    @include m.xl {
+        width: 80%;
+    }
+}
+.l-container.open {
+    position: fixed;
+    top: 0;
+    left: 0;
+}

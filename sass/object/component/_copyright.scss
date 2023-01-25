@@ -1,0 +1,9 @@
+@use "../../foundation/color" as c;
+@use "../../foundation/font" as f;
+
+.c-copyright {
+    color: c.$footer-color;
+    font-family: f.$m-plus;
+    font-size: 14px;
+    line-height: 1.42;
+}

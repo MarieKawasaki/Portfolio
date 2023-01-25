@@ -1,0 +1,105 @@
+@use "../../foundation/mixin" as m;
+@use "../../foundation/color" as c;
+@use "../../foundation/font" as f;
+
+.p-front-acces {
+    position: relative;
+    background-color: c.$f-acces-info-bg;
+    min-height: 691px;
+
+    @include m.lg {
+        min-height: 415px;
+    }
+
+    @include m.xl {
+        min-height: 649px;
+    }
+
+    &::before {
+        content: "";
+        width: 100%;
+        height: 60%;
+        background-color: c.$f-acces-mask-bg;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -5;
+
+        @include m.lg {
+            height: 100%;
+        }
+
+        @include m.xl {
+            width: 60%;
+        }
+    }
+
+    &__map {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        z-index: -10;
+        overflow: hidden;
+
+        iframe {
+            width: 100%;
+            height: 150%;
+            margin-top: -150px;
+        }
+    }
+
+    &__info {
+        width: 100%;
+        color: c.$f-acces-color;
+        font-family: f.$m-plus;
+
+        @include m.xl {
+            width: 60%;
+        }
+    }
+
+    &__title {
+        padding: 40px;
+        font-size: 20px;
+        line-height: 1.28;
+        position: relative;
+
+        @include m.xl {
+            padding-bottom: 119px;
+            font-size: 24px;
+            line-height: 1.5;
+        }
+
+        &::after {
+            content: "";
+            width: 75px;
+            height: 2px;
+            position: absolute;
+            bottom: 20px;
+            left: 40px;
+            background-color: c.$f-acces-color;
+
+            @include m.xl {
+                bottom: 55px;
+            }
+
+        }
+    }
+
+    &__text {
+        padding: 0 40px 40px 40px;
+        font-size: 14px;
+        line-height: 2.35;
+        // width: 100%;
+
+        @include m.lg {
+            // width: ;
+        }
+
+        // @media screen and (max-width: (m.$lg)) {
+        //     width: 100%;
+        // }
+    }
+}

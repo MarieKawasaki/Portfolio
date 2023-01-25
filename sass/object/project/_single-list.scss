@@ -1,0 +1,26 @@
+@use "../../foundation/mixin" as m;
+@use "../../foundation/color" as c;
+@use "../../foundation/font" as f;
+
+
+.p-single-list {
+    margin-bottom: 30px;
+    font-family: f.$m-plus;
+    font-size: 16px;
+    line-height: 1.43;
+    color: c.$s-color;
+
+    @include m.lg {
+        margin-bottom: 60px;
+        margin-left: 50px;
+    }
+
+    &__left {
+        &:nth-child(3) {
+            margin-bottom: 60px;
+        }
+    }
+    &__second {
+        margin: 20px 0 20px 18px;
+    }
+}

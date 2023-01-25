@@ -1,0 +1,84 @@
+@use "../../foundation/mixin" as m;
+@use "../../foundation/color" as c;
+
+.p-aside {
+    // position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 20;
+    width: 20%;
+    background-color: c.$aside-bg;
+
+    @media screen and (max-width: m.$xl) {
+        position: absolute;
+        top: 0;
+        right: -44%;
+        opacity: 1;
+        transition: all .5s;
+    }
+
+    &__close-button {
+        margin-top: 25px;
+        margin-left: 90%;
+
+        @include m.xl {
+            display: none;
+        }
+    }
+
+    &__title {
+        padding-top: 82px;
+        padding-left: 46px;
+
+        @media screen and(max-width: m.$xl) {
+            display: none;
+        }
+    }
+
+    &__list {
+        margin-top: 85px;
+        margin-left: 20%;
+
+        @include m.lg {
+            margin-left: 46px;
+        }
+    }
+
+    .menu {
+        padding-inline-start: 0;
+
+        a {
+            margin-bottom: 37px;
+        }
+    }
+
+    .sub-menu {
+        margin-left: 20px;
+    }
+
+    .menu-item-type-taxonomy>a {
+        margin-bottom: 40px;
+        display: block;
+        margin-top: 40px;
+    }
+
+    .menu-item {
+        margin-bottom: 23px;
+    }
+}
+
+.p-aside.open {
+    position: absolute;
+    z-index: 20;
+    background-color: c.$aside-bg;
+    padding-top: 50px;
+    width: 90%;
+    right: 0;
+    opacity: 1;
+
+    @media screen and (max-width: m.$xl) {
+        // width: 100%;
+        right: 0;
+        opacity: 1;
+    }
+}

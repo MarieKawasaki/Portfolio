@@ -1,0 +1,18 @@
+@use "../../foundation/mixin" as m;
+@use "../../foundation/color" as c;
+@use "../../foundation/font" as f;
+
+.narrowcolumn {
+    text-align: center;
+
+    .center {
+        margin-top: 50px;
+        margin-bottom: 40px;
+    }
+
+    p {
+        a {
+            color: #4b2ab8;
+        }
+    }
+}

@@ -1,0 +1,24 @@
+@use "../../foundation/color" as c;
+
+.c-loupe {
+    color: c.$header-loupe;
+    position: relative;
+
+    &::before {
+        content: "";
+        width: 24px;
+        height: 24px;
+        background: url(../img/loupe.jpg);
+        display: inline-block;
+        position: absolute;
+        top: 11px;
+        left: 16px;
+    }
+
+    input {
+        padding: 11px 11px 11px 50px;
+        background-color: #fff;
+        border: solid 1px c.$header-color;
+        border-radius: 10px;
+    }
+}

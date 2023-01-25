@@ -1,0 +1,9 @@
+@use "../../foundation/color" as c;
+@use "../../foundation/font" as f;
+
+.c-archive-text {
+    color: c.$a-article-color;
+    font-family: f.$m-plus;
+    font-size: 16px;
+    line-height: 1.43;
+}
