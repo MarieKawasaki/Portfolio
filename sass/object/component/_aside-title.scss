@@ -1,9 +1,0 @@
-@use "../../foundation/font" as f;
-@use "../../foundation/color" as c;
-
-.c-aside-title {
-    font-family: f.$roboto;
-    font-size: 22px;
-    line-height: 1.3;
-    color: c.$aside-color;
-}

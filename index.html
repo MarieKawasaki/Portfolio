@@ -18,175 +18,232 @@
 
 
 <body>
-    <div class="wrapper">
 
-        <header class="l-header p-header">
+    <header class="l-header p-header">
 
-            <h1>Portfolio</h1>
+        <h1 class="p-header__title">Portfolio</h1>
 
-            <ul>
-                <li>
-                    <button>Work</button>
-                    <img src="img/balloon_red.mini.png" alt="赤い風船の画像">
+        <ul class="p-header__menu">
+            <li class="p-header__item">
+                <button class="p-header__button">Work</button>
+                <img class="p-header__img" src="img/balloon_pink.mini.png" alt="ピンクの風船の画像">
+            </li>
+            <li class="p-header__item">
+                <button class="p-header__button">Skill</button>
+                <img class="p-header__img" src="img/balloon_yellow.mini.png" alt="黄色の風船の画像">
+            </li>
+            <li class="p-header__item">
+                <button class="p-header__button">About</button>
+                <img class="p-header__img" src="img/balloon_red.mini.png" alt="赤の風船の画像">
+            </li>
+            <li class="p-header__item">
+                <button class="p-header__button">Contact</button>
+                <img class="p-header__img" src="img/balloon_lightblue.mini.png" alt="水色の風船の画像">
+            </li>
+        </ul>
+
+        <div class="p-header__hamburger">
+            <button class="p-header__hamburger-button"></button>
+        </div>
+
+    </header>
+
+
+    <div class="l-main-visual p-main-visual">
+
+        <img class="p-main-visual__img" src="" alt="メイン画像">
+
+        <div class="p-main-visual__catch-copy">
+            <p class="p-main-visual__title--first">家族が宝物</p>
+            <p class="p-main-visual__title--second">×</p>
+            <p class="p-main-visual__title--third">今を大切に</p>
+        </div>
+
+        <div class="p-main-visual__mask">
+            <p class="p-main-visual__welcome-first">お越しいただき</p>
+            <p class="p-main-visual__welcome-second">ありがとうございます</p>
+        </div>
+
+    </div>
+
+    <div class="l-slide-menu p-slide-menu">
+        <ul class="p-slide-menu__list">
+            <li class="p-slide-menu__item">
+                <a class="p-slide-menu__link" href="#">
+                    <img class="p-slide-menu__flash" src="" alt="">
+
+                    <p class="p-slide-menu__title">Work</p>
+
+                    <p class="p-slide-menu__title--ja">(これまでの作品)</p>
+                </a>
+
+            </li>
+
+            <li class="p-slide-menu__item">
+                <a class="p-slide-menu__link" href="#">
+                    <img class="p-slide-menu__flash" src="" alt="">
+
+                    <p class="p-slide-menu__title">Skill</p>
+
+                    <p class="p-slide-menu__title--ja">(使える言語と設計)</p>
+                </a>
+
+            </li>
+
+            <li class="p-slide-menu__item">
+                <a class="p-slide-menu__link" href="#">
+                    <img class="p-slide-menu__flash" src="" alt="">
+
+                    <p class="p-slide-menu__title">About</p>
+
+                    <p class="p-slide-menu__title--ja">(自己紹介)</p>
+                </a>
+
+            </li>
+
+            <li class="p-slide-menu__item">
+                <a class="p-slide-menu__link" href="#">
+                    <img class="p-slide-menu__flash" src="" alt="">
+
+                    <p class="p-slide-menu__title">Contact</p>
+
+                    <p class="p-slide-menu__title--ja">(お問い合わせ)</p>
+                </a>
+
+            </li>
+        </ul>
+    </div>
+
+
+    <div class="l-container">
+
+        <section class="l-container__work p-work">
+            <h2 class="p-work__title">Work</h2>
+
+
+            <ul class="p-work__list">
+                <li class="p-work__item">
+                    <a class="p-work__link" href="#">
+                        <img class="p-work__img" src="#" alt="">
+
+                        <h3 class="p-work__second-title">課題で作ったハンバーガーサイト</h3>
+
+                        <div class="p-work__skill-list">
+                            <p class="p-work__skill">・Sass</p>
+                            <p class="p-work__skill">・WordPress化</p>
+                            <p class="p-work__skill">・FLOCSS</p>
+                        </div>
+                    </a>
+
+
                 </li>
-                <li>
-                    <button>Skill</button>
-                </li>
-                <li>
-                    <button>About</button>
-                </li>
-                <li>
-                    <button>Contact</button>
+
+                <li class="p-work__list">
+                    <a class="p-work__link" href="#">
+                        <img class="p-work__img" src="#" alt="">
+
+                        <h3 class="p-work__second-title">課題のHP模写</h3>
+
+                        <div class="p-work__skill-list">
+                            <p class="p-work__skill">・ドロップダウンメニュー</p>
+                            <p class="p-work__skill">・3層パララックス</p>
+                            <p class="p-work__skill">・ハンバーガーボタン</p>
+                        </div>
+                    </a>
+
+
                 </li>
             </ul>
 
-        </header>
+        </section>
+
+        <section class="l-container__skill p-skill">
+            <h2 class="p-skill__title">Skill</h2>
+
+            <ul class="p-skill__list">
+                <li class="p-skill__item">
+                    <img class="p-skill__img" src="" alt="">
+                </li>
+
+                <li class="p-skill__item">
+                    <img class="p-skill__img" src="" alt="">
+                </li>
+
+                <li class="p-skill__item">
+                    <img class="p-skill__img" src="" alt="">
+                </li>
+            </ul>
+        </section>
 
 
-        <div class="l-main-visual p-front-main-visual">
+        <section class="l-container__about p-about">
 
-            <img class="p-front-main-visual__img" src="img/mainvisual.jpg" alt="frontページメイン画像">
+            <h2 class="p-about__title">About</h2>
 
-            <div>
-                <p class="p-front-main-visual__title c-mv-title">家族が宝物</p>
-                <p>×</p>
-                <p>今を大切に</p>
-            </div>
+            <ul class="p-about__list">
 
-            <div class="p-header__mask c-mask"></div>
+                <li class="p-about__left">
 
-        </div>
+                    <img class="p-about__img" src="#" alt="">
 
+                    <img class="p-about__img" src="#" alt="">
 
-        <div>
-            <button>Top</button>
-        </div>
+                </li>
 
+                <li class="p-about__right">
 
-        <div class="l-container">
+                    <p class="p-about__text"></p>
 
-            <section>
-                <h2>Work</h2>
+                </li>
 
-                <div>
-                    <ul>
-                        <li>
-                            <a href="#">
-                                <img src="#" alt="">
-
-                                <h3>課題で作ったハンバーガーサイト</h3>
-
-                                <div>
-                                    <p>・Sass</p>
-                                    <p>・WordPress化</p>
-                                    <p>・FLOCSS</p>
-                                </div>
-                            </a>
+            </ul>
+        </section>
 
 
-                        </li>
+        <section class="l-container__contact p-contact">
 
-                        <li>
-                            <a href="#">
-                                <img src="#" alt="">
+            <h2 class="p-contact__title">Contact</h2>
 
-                                <h3>課題のHP模写</h3>
+            <ul class="p-contact__list">
 
-                                <div>
-                                    <p>・ドロップダウンメニュー</p>
-                                    <p>・3層パララックス</p>
-                                    <p>・ハンバーガーボタン</p>
-                                </div>
-                            </a>
+                <li class="p-contact__item">
+                    <a class="p-contact__link" href="#">
+                        <ul class="p-contact__unit">
+                            <li class="p-contact__icon"></li>
 
-
-                        </li>
-                    </ul>
-                </div>
-            </section>
-
-            <section>
-                <h2>Skill</h2>
-
-                <ul>
-                    <li>
-                        <img src="" alt="">
-                    </li>
-
-                    <li>
-                        <img src="" alt="">
-                    </li>
-
-                    <li>
-                        <img src="" alt="">
-                    </li>
-                </ul>
-            </section>
-
-
-            <section>
-
-                <h2>About</h2>
-
-                <ul>
-
-                    <li>
-
-                        <img src="#" alt="">
-
-                        <img src="#" alt="">
-
-                    </li>
-
-                    <li>
-
-                        <p></p>
-
-                    </li>
-
-                </ul>
-            </section>
-
-
-            <section>
-
-                <h2>Contact</h2>
-
-                <ul>
-
-                    <li>
-                        <ul>
-                            <li></li>
-
-                            <li></li>
+                            <li class="p-contact__info">
+                                <p class="p-contact__address"></p>
+                            </li>
                         </ul>
-                    </li>
+                    </a>
+                </li>
 
-                    <li>
-                        <ul>
-                            <li></li>
+                <li class="p-contact__item">
+                    <a class="p-contact__link" href="#">
+                        <ul class="p-contact__unit">
+                            <li class="p-contact__icon"></li>
 
-                            <li></li>
+                            <li class="p-contact__info">
+                                <p class="p-contact__address"></p>
+                            </li>
                         </ul>
-                    </li>
+                    </a>
+                </li>
 
-                    <li>
-                        <button>
-                            メールでのお問い合わせ
-                        </button>
-                    </li>
-                </ul>
-            </section>
-
-        </div>
-
-
-        <footer class="l-footer p-footer">
-
-            <p class="p-footer__copyright c-copyright">Copyright: mamarie.moe</p>
-        </footer>
+                <li class="p-contact__item">
+                    <a class="p-contact__link" href="#">メールでのお問い合わせ</a>
+                </li>
+            </ul>
+        </section>
 
     </div>
+
+
+    <footer class="l-footer p-footer">
+
+        <p class="p-footer__copyright">Copyright: mamarie.moe</p>
+    </footer>
+
 
     <script src="js/index.js"></script>
 

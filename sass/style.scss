@@ -16,11 +16,10 @@
 // Layout
 // ========================================================
 
-@use "layout/l-aside";
+@use "layout/slide-menu";
 @use "layout/container";
-@use "layout/content";
-@use "layout/l-footer";
-@use "layout/l-header";
+@use "layout/footer";
+@use "layout/header";
 @use "layout/main-visual";
 
 // ========================================================
@@ -31,43 +30,22 @@
 // Component
 // --------------------------------------------------------
 
-@use "object/component/aside-title";
-@use "object/component/button";
-@use "object/component/copyright";
-@use "object/component/index-item";
-@use "object/component/logo";
-@use "object/component/mask";
-@use "object/component/aside-menu";
-@use "object/component/mv-title";
-@use "object/component/aside-subtitle";
-@use "object/component/loupe";
-@use "object/component/archive-subtitle";
-@use "object/component/archive-text";
-@use "object/component/archive-title";
-@use "object/component/pagination";
+
 
 // --------------------------------------------------------
 // Project
 // --------------------------------------------------------
 
 @use "object/project/error";
-@use "object/project/aside";
+@use "object/project/about";
+@use "object/project/contact";
 @use "object/project/footer";
-@use "object/project/front-acces";
-@use "object/project/front-article";
-@use "object/project/front-main-visual";
 @use "object/project/header";
-@use "object/project/archive-article";
-@use "object/project/archive-content";
-@use "object/project/archive-main-visual";
-@use "object/project/archive-pagination";
-@use "object/project/page";
-@use "object/project/single-main-visual";
-@use "object/project/single-summary";
-@use "object/project/single-photo";
-@use "object/project/single-list";
-@use "object/project/single-html";
-@use "object/project/single-order";
+@use "object/project/main-visual";
+@use "object/project/skill";
+@use "object/project/slide-menu";
+@use "object/project/work";
+
 
 // --------------------------------------------------------
 // Utility
