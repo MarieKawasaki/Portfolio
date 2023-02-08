@@ -1,0 +1,4 @@
+{
+    "dartsass.targetDirectory": "css/",
+    "dartsass.sassBinPath": "node_modules/.bin/sass"
+}
