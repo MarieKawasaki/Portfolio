@@ -12,6 +12,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@400;700&family=Roboto:wght@700&display=swap"
         rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,1000&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 </head>
@@ -21,24 +23,44 @@
 
     <header class="l-header p-header">
 
-        <h1 class="p-header__title">Portfolio</h1>
+        <div class="p-header__logo">
+            <img class="p-header__point" src="img/ribbon_textbanner_line_03_pink.png" alt="ハートの木の画像">
+            <h1 class="p-header__title">
+                <span class="p-header__words one">m</span>
+                <span class="p-header__words two">a</span>
+                <span class="p-header__words three">m</span>
+                <span class="p-header__words four">a</span>
+                <span class="p-header__words five">r</span>
+                <span class="p-header__words six">i</span>
+                <span class="p-header__words seven">e</span>
+            </h1>
+            <!-- <h1 class="p-header__title">mamarie</h1> -->
+        </div>
 
         <ul class="p-header__menu">
             <li class="p-header__item">
-                <button class="p-header__button">Work</button>
-                <img class="p-header__img" src="img/balloon_pink.mini.png" alt="ピンクの風船の画像">
+                <a class="p-header__button" href="#">
+                    <p class="p-header__info">Work</p>
+                    <img class="p-header__img" src="img/balloon_pink.mini.png" alt="ピンクの風船の画像">
+                </a>
             </li>
             <li class="p-header__item">
-                <button class="p-header__button">Skill</button>
-                <img class="p-header__img" src="img/balloon_yellow.mini.png" alt="黄色の風船の画像">
+                <a class="p-header__button" href="#">
+                    <button class="p-header__info">Skill</button>
+                    <img class="p-header__img" src="img/balloon_yellow.mini.png" alt="黄色の風船の画像">
+                </a>
             </li>
             <li class="p-header__item">
-                <button class="p-header__button">About</button>
-                <img class="p-header__img" src="img/balloon_red.mini.png" alt="赤の風船の画像">
+                <a class="p-header__button" href="#">
+                    <button class="p-header__info">About</button>
+                    <img class="p-header__img" src="img/balloon_red.mini.png" alt="赤の風船の画像">
+                </a>
             </li>
             <li class="p-header__item">
-                <button class="p-header__button">Contact</button>
-                <img class="p-header__img" src="img/balloon_lightblue.mini.png" alt="水色の風船の画像">
+                <a class="p-header__button" href="#">
+                    <button class="p-header__info">Contact</button>
+                    <img class="p-header__img" src="img/balloon_lightblue.mini.png" alt="水色の風船の画像">
+                </a>
             </li>
         </ul>
 
@@ -51,7 +73,7 @@
 
     <div class="l-main-visual p-main-visual">
 
-        <img class="p-main-visual__img" src="" alt="メイン画像">
+        <img class="p-main-visual__img" src="img/miyakojima-12707_TP_V.jpg" alt="メイン画像">
 
         <div class="p-main-visual__catch-copy">
             <p class="p-main-visual__title--first">家族が宝物</p>
@@ -108,6 +130,17 @@
                     <p class="p-slide-menu__title">Contact</p>
 
                     <p class="p-slide-menu__title--ja">(お問い合わせ)</p>
+                </a>
+
+            </li>
+
+            <li class="p-slide-menu__item">
+                <a class="p-slide-menu__link" href="#">
+                    <img class="p-slide-menu__flash" src="" alt="">
+
+                    <p class="p-slide-menu__title">Back To Top</p>
+
+                    <p class="p-slide-menu__title--ja">(Topに戻る)</p>
                 </a>
 
             </li>

@@ -1,3 +1,100 @@
 @use "../../foundation/mixin" as m;
 @use "../../foundation/color" as c;
 @use "../../foundation/font" as f;
+
+.p-main-visual {
+    margin-top: -200px;
+
+    &__img {}
+
+    &__catch-copy {
+        position: absolute;
+        top: 300px;
+        width: 100%;
+        font-size: 3.5rem;
+        color: c.$main-visual-catch-copy;
+    }
+
+    &__title--first {
+        margin-left: 200px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 80px;
+            left: 200px;
+            width: 100px;
+            height: 4px;
+            background-color: c.$main-visual-catch-copy;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 80px;
+            left: 300px;
+            width: 300px;
+            height: 4px;
+            background-color: c.$main-visual-accent;
+        }
+    }
+
+    &__title--second {
+        margin-left: 350px;
+    }
+
+    &__title--third {
+        margin-left: 300px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 250px;
+            left: 300px;
+            width: 100px;
+            height: 4px;
+            background-color: c.$main-visual-accent;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 250px;
+            left: 400px;
+            width: 300px;
+            height: 4px;
+            background-color: c.$main-visual-catch-copy;
+        }
+    }
+
+    &__mask {
+        width: 100%;
+        height: 100vh;
+        // 仮の色
+        background-color: aquamarine;
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: c.$main-visual-catch-copy;
+        // 上に飛ばす
+        margin-top: -100%;
+    }
+
+    &__welcome-first {
+        font-size: 4rem;
+        margin-top: 350px;
+        margin-left: 50%;
+        display: block;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+
+    &__welcome-second {
+        font-size: 4rem;
+        margin-left: 50%;
+        display: block;
+        transform: translateX(-50%);
+        text-align: center;
+        margin-top: 50px;
+    }
+}

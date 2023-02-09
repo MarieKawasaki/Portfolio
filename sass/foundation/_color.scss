@@ -1,10 +1,5 @@
-
 // header
-$header-mask-bg: rgba(0,0,0,0.5);
-$header-bg: #FFF7EF;
-$header-color: #707070;    //borderも同じ
-$header-search-button-bg: #F2EDE9;
-$header-loupe: #808080;
+$header-title: #bf08bb;
 
 // aside
 $aside-bg: #F2EDE9;
@@ -17,30 +12,31 @@ $footer-color: #fff;
 
 
 // main-visual-title
-$main-visual-color: #fff;
+$main-visual-catch-copy: #fffdf7;
+$main-visual-accent: #f5abf3;
 
 
 // front-article
 $f-article-title: #EAEAEA;
 $f-article-post-color: #3C2A10;
-$f-article-post-bg: rgba(255,255,255,0.8);
+$f-article-post-bg: rgba(255, 255, 255, 0.8);
 
 
 // front-acces
 $f-acces-color: #fff;
-$f-acces-info-bg: rgba(0,0,0,0.3);
-$f-acces-mask-bg: rgba(0,0,0,0.3);
+$f-acces-info-bg: rgba(0, 0, 0, 0.3);
+$f-acces-mask-bg: rgba(0, 0, 0, 0.3);
 
 // archive-content
-$a-main-visual-mask: rgba(0,0,0,0.5);
+$a-main-visual-mask: rgba(0, 0, 0, 0.5);
 $a-content-color: #3C2A10;
-$a-article-bg: #3C2B1C;      //pagination①のbgも
+$a-article-bg: #3C2B1C; //pagination①のbgも
 $a-article-color: #fff;
-$a-pagination-color: #707070;    //詳しく見るbuttonも
+$a-pagination-color: #707070; //詳しく見るbuttonも
 $a-bg: #fff;
 
 // single
 $s-color: #3c2a10;
 $s-table-line: #707070;
-$s-html-bg: #f5f5f5;        //infoのbgも
+$s-html-bg: #f5f5f5; //infoのbgも
 $s-button-bg: #F2EDE9;
