@@ -69,6 +69,12 @@
     }
 
 
+
+
+
+    // バルーンボタン
+
+
     &__menu {
         display: flex;
         width: 40%;
@@ -100,4 +106,44 @@
     }
 
     &__img {}
+
+
+
+
+
+    // Menuボタン
+
+    &__nav {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        opacity: 0;
+        transition: all 0.65s;
+    }
+
+    &__nav.isActive {
+        opacity: 1;
+        transition: all 0.65s;
+    }
+
+    &__nav-button {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: block;
+        box-shadow: inset 0 10px 25px 0 rgba(244, 195, 247, .5);
+        border-radius: 50%;
+    }
+
+    &__nav-info {
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    &__nav-img {
+        height: 200px;
+        display: block;
+    }
 }
