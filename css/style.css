@@ -555,4 +555,120 @@ img {
   margin-top: 50px;
 }
 
+.p-slide-menu {
+  display: block;
+  position: fixed;
+  top: 200px;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 50%;
+}
+.p-slide-menu__close-button {
+  position: relative;
+  top: 20px;
+  right: 20px;
+  width: 30px;
+  height: 30px;
+  margin: 0 0 auto auto;
+  display: block;
+  border-radius: 50%;
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.p-slide-menu__close-button:before {
+  content: "";
+  background-color: #fcd4ed;
+  width: 30px;
+  height: 4px;
+  position: absolute;
+  top: 27px;
+  left: 15px;
+  transform: rotate(45deg);
+}
+.p-slide-menu__close-button:after {
+  content: "";
+  background-color: #fcd4ed;
+  width: 30px;
+  height: 4px;
+  position: absolute;
+  top: 27px;
+  left: 15px;
+  transform: rotate(-45deg);
+}
+.p-slide-menu__list {
+  width: 400px;
+  padding: 50px;
+}
+.p-slide-menu__item {
+  margin-bottom: 30px;
+}
+.p-slide-menu__item:last-child {
+  margin-bottom: 0;
+}
+.p-slide-menu__link {
+  display: flex;
+}
+.p-slide-menu__flash {
+  width: 20%;
+  position: relative;
+  margin-right: 20px;
+  opacity: 0;
+}
+.p-slide-menu__item:hover .p-slide-menu__flash {
+  opacity: 1;
+}
+.p-slide-menu__item:hover .flash {
+  animation: flash 1.5s infinite;
+}
+.p-slide-menu__item:hover .flash:nth-child(1) {
+  animation-delay: -1s;
+}
+.p-slide-menu__item:hover .flash:nth-child(2) {
+  animation-delay: -0.6s;
+}
+.p-slide-menu__item:hover .flash:nth-child(3) {
+  animation-delay: -0.2s;
+}
+@keyframes flash {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.p-slide-menu__flash--one {
+  position: absolute;
+  top: 1px;
+  left: 12px;
+  width: 50%;
+}
+.p-slide-menu__flash--two {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  width: 40%;
+}
+.p-slide-menu__flash--three {
+  position: absolute;
+  top: 25px;
+  right: 10px;
+  width: 30%;
+}
+.p-slide-menu__words {
+  display: flex;
+  flex-flow: column;
+}
+.p-slide-menu__title {
+  color: #fcd4ed;
+  font-size: 1.5rem;
+  font-family: "Nunito", sans-serif;
+}
+.p-slide-menu__title--ja {
+  color: #fcd4ed;
+}
+
 /*# sourceMappingURL=style.css.map */

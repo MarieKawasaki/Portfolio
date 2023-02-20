@@ -13,6 +13,11 @@ $(function () {
 
 
 
+    // スライドメニュー
+    $(".p-header__nav").click(function () {
+        $(".p-slide-menu").slideToggle();
+    });
+
 });
 
 
