@@ -2,5 +2,10 @@
 
 .l-container {
     width: 80%;
-    background-color: red;
+    background-color: bisque;
+    margin: 80px auto 100px auto;
+    padding: 100px 200px;
+
+
+    &__work {}
 }

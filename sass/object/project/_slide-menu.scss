@@ -7,9 +7,11 @@
     display: block;
     position: fixed;
     top: 200px;
-    right: 0;
+    right: -400px;
     background-color: c.$slide-menu-bg;
     border-radius: 50%;
+    transition: 500ms;
+    z-index: 60;
 
 
 
@@ -48,6 +50,14 @@
             left: 15px;
             transform: rotate(-45deg);
         }
+
+        &:hover {
+
+            &:before,
+            &:after {
+                background-color: c.$slide-menu-hover;
+            }
+        }
     }
 
     &__list {
@@ -57,10 +67,6 @@
 
     &__item {
         margin-bottom: 30px;
-
-        &:last-child {
-            margin-bottom: 0;
-        }
     }
 
     &__link {
@@ -155,4 +161,10 @@
     &__title--ja {
         color: c.$slide-menu-title;
     }
+}
+
+// スライドアニメーション
+.slide {
+    @extend .p-slide-menu;
+    right: 0;
 }
