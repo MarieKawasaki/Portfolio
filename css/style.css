@@ -346,10 +346,17 @@ img {
 
 .l-container {
   width: 80%;
-  background-color: bisque;
-  margin: 80px auto 100px auto;
-  padding: 100px 200px;
+  margin: 77px auto 100px auto;
+  padding: 200px;
 }
+.l-container__skill {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.l-container__contact {
+  margin-top: 100px;
+}
+
 .l-footer {
   width: 100%;
   height: 150px;
@@ -476,6 +483,10 @@ img {
 .p-main-visual {
   margin-top: -200px;
 }
+.p-main-visual__img {
+  height: 100vh;
+  object-fit: cover;
+}
 .p-main-visual__catch-copy {
   position: absolute;
   top: 300px;
@@ -558,7 +569,7 @@ img {
 .p-slide-menu, .slide {
   display: block;
   position: fixed;
-  top: 200px;
+  top: 100px;
   right: -400px;
   background-color: rgba(0, 0, 0, 0.8);
   border-radius: 50%;
@@ -675,6 +686,68 @@ img {
 
 .slide {
   right: 0;
+}
+
+.p-work {
+  /*選択するサムネイル画像の設定*/
+}
+.p-work__title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+.p-work__choice-button li {
+  cursor: pointer;
+  outline: none;
+  background: #333;
+}
+.p-work__choice-button li img {
+  opacity: 0.4;
+  /*選択されていないものは透過40%*/
+}
+.p-work__choice-button li.slick-current img {
+  opacity: 1;
+  /*選択されているものは透過しない*/
+}
+.p-work__list {
+  margin-top: 10px;
+}
+.p-work__second-title {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+/*矢印の設定*/
+/*戻る、次へ矢印の位置*/
+.slick-prev,
+.slick-next {
+  position: absolute;
+  /*絶対配置にする*/
+  z-index: 3;
+  top: 42%;
+  cursor: pointer;
+  /*マウスカーソルを指マークに*/
+  outline: none;
+  /*クリックをしたら出てくる枠線を消す*/
+  border-top: 2px solid #000;
+  /*矢印の色*/
+  border-right: 2px solid #000;
+  /*矢印の色*/
+  height: 25px;
+  width: 25px;
+}
+
+.slick-prev {
+  /*戻る矢印の位置と形状*/
+  left: -2.5%;
+  transform: rotate(-135deg);
+}
+
+.slick-next {
+  /*次へ矢印の位置と形状*/
+  right: -2.5%;
+  transform: rotate(45deg);
 }
 
 /*# sourceMappingURL=style.css.map */

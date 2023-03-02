@@ -37,6 +37,25 @@ $(function () {
     });
 
 
+
+    //下部画像の設定
+    $('.p-work__list').slick({
+        infinite: true, //スライドをループさせるかどうか。初期値はtrue。
+        fade: true, //フェードの有効化
+        arrows: false,//左右の矢印あり
+        asNavFor: '.p-work__choice-button', //連動させるサムネイルのクラス名
+    });
+
+    //選択画像の設定
+    $('.p-work__choice-button').slick({
+        infinite: true, //スライドをループさせるかどうか。初期値はtrue。
+        slidesToShow: 5, //表示させるスライドの数
+        focusOnSelect: true, //フォーカスの有効化
+        prevArrow: '<div class="slick-prev"></div>',//矢印部分PreviewのHTMLを変更
+        nextArrow: '<div class="slick-next"></div>',//矢印部分NextのHTMLを変更
+        asNavFor: '.p-work__list', //連動させるスライドショーのクラス名
+    });
+
 });
 
 

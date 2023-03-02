@@ -2,10 +2,20 @@
 
 .l-container {
     width: 80%;
-    background-color: bisque;
-    margin: 80px auto 100px auto;
-    padding: 100px 200px;
+    margin: 77px auto 100px auto;
+    padding: 200px;
 
 
     &__work {}
+
+    &__skill {
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    &__about {}
+
+    &__contact {
+        margin-top: 100px;
+    }
 }

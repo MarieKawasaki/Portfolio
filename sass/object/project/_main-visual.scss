@@ -5,7 +5,10 @@
 .p-main-visual {
     margin-top: -200px;
 
-    &__img {}
+    &__img {
+        height: 100vh;
+        object-fit: cover;
+    }
 
     &__catch-copy {
         position: absolute;
