@@ -386,11 +386,7 @@ img {
 .p-header {
   display: flex;
   z-index: 50;
-}
-.p-header__logo {
-  width: 200px;
-  height: 200px;
-  margin: 50px 0 0 50px;
+  padding: 30px;
 }
 .p-header__point {
   position: relative;
@@ -402,6 +398,9 @@ img {
   font-size: 1.25rem;
   display: block;
   margin: 50px 0 0 50px;
+}
+.p-header .logo {
+  width: 100px;
 }
 .p-header__words {
   position: absolute;
@@ -485,14 +484,13 @@ img {
 }
 .p-main-visual__img {
   height: 100vh;
-  object-fit: cover;
 }
 .p-main-visual__catch-copy {
   position: absolute;
   top: 300px;
   width: 100%;
   font-size: 3.5rem;
-  color: #fffdf7;
+  color: #f520eb;
 }
 .p-main-visual__title--first {
   margin-left: 200px;
@@ -504,7 +502,7 @@ img {
   left: 200px;
   width: 100px;
   height: 4px;
-  background-color: #fffdf7;
+  background-color: #f520eb;
 }
 .p-main-visual__title--first::after {
   content: "";
@@ -537,7 +535,7 @@ img {
   left: 400px;
   width: 300px;
   height: 4px;
-  background-color: #fffdf7;
+  background-color: #f520eb;
 }
 .p-main-visual__mask {
   width: 100%;
@@ -546,7 +544,7 @@ img {
   position: absolute;
   top: 0;
   left: 0;
-  color: #fffdf7;
+  color: #f520eb;
   margin-top: -100%;
 }
 .p-main-visual__welcome-first {
