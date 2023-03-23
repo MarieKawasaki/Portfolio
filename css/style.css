@@ -715,6 +715,11 @@ img {
   text-align: center;
   font-size: 1.5rem;
 }
+.p-work__skill-list {
+  position: absolute;
+  top: 0;
+  left: -50px;
+}
 
 /*矢印の設定*/
 /*戻る、次へ矢印の位置*/
