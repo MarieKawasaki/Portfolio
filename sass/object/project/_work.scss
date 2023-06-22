@@ -11,6 +11,10 @@
         margin-bottom: 30px;
     }
 
+    &__choice-button {
+        overflow: hidden;
+    }
+
     /*選択するサムネイル画像の設定*/
     &__choice-button li {
         cursor: pointer;
@@ -38,14 +42,63 @@
         font-size: 1.5rem;
     }
 
-    &__item {}
+    &__item {
+        position: relative;
+    }
+
+    .slick-list {
+        overflow: visible;
+    }
+
+
+
+
+    //   吹き出し
 
     &__skill-list {
         position: absolute;
-        top: 0;
-        left: -50px;
+        top: 80px;
+        right: 106%;
+        display: inline-block;
+        padding: 40px 30px;
+        min-width: 210px;
+        max-width: 100%;
+        color: #555;
+        font-size: 16px;
+        background: #FFF;
+        border: solid 3px #555;
+        border-radius: 50px;
+        box-sizing: border-box;
+        white-space: nowrap;
+    }
+
+    &__skill-list:before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: -24px;
+        margin-top: -12px;
+        border: 12px solid transparent;
+        border-left: 12px solid #FFF;
+        z-index: 2;
+    }
+
+    &__skill-list:after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: -30px;
+        margin-top: -14px;
+        border: 14px solid transparent;
+        border-left: 14px solid #555;
+        z-index: 1;
+    }
+
+    &__skill {
+        margin-top: 20px;
     }
 }
+
 
 /*矢印の設定*/
 
