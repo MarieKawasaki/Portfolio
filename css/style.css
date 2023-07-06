@@ -372,6 +372,11 @@ img {
   height: 100vh;
 }
 
+.c-title__section {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
 .narrowcolumn {
   text-align: center;
 }
@@ -564,6 +569,19 @@ img {
   margin-top: 50px;
 }
 
+.p-skill__title {
+  margin-top: 300px;
+  margin-bottom: 100px;
+}
+.p-skill__list {
+  display: flex;
+  margin-bottom: 300px;
+}
+.p-skill__item {
+  text-align: center;
+  margin: 50px 20px;
+}
+
 .p-slide-menu, .slide {
   display: block;
   position: fixed;
@@ -690,8 +708,6 @@ img {
   /*選択するサムネイル画像の設定*/
 }
 .p-work__title {
-  text-align: center;
-  font-size: 2.5rem;
   margin-bottom: 30px;
 }
 .p-work__choice-button {

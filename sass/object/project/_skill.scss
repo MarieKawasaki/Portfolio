@@ -1,3 +1,22 @@
 @use "../../foundation/mixin" as m;
 @use "../../foundation/color" as c;
 @use "../../foundation/font" as f;
+
+
+.p-skill {
+
+    &__title {
+        margin-top: 300px;
+        margin-bottom: 100px;
+    }
+
+    &__list {
+        display: flex;
+        margin-bottom: 300px;
+    }
+
+    &__item {
+        text-align: center;
+        margin: 50px 20px;
+    }
+}

@@ -1,0 +1,12 @@
+@use "../../foundation/mixin" as m;
+@use "../../foundation/color" as c;
+@use "../../foundation/font" as f;
+
+
+.c-title {
+
+    &__section {
+        text-align: center;
+        font-size: 2.5rem;
+    }
+}
